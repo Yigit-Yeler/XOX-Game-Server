@@ -1,0 +1,19 @@
+@hostname = http://localhost:5000/auth
+
+POST {{hostname}}/register 
+Content-Type: application/json
+
+{
+    "username":"asdasd",
+    "email":"abc@gmail.com",
+    "password":"paswordd"
+}
+
+###
+POST {{hostname}}/login 
+Content-Type: application/json
+
+{
+    "email":"abc@gmail.com",
+    "password":"paswordd"
+}
